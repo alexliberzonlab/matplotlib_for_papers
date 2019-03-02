@@ -3,7 +3,7 @@ Creating publication-quality figures with Matplotlib
 ====================================================
 
 -------------------------------------------------------------------------------
-Jean-Baptiste Mouret -- mouret@isir.upmc.fr / http://pages.isir.upmc.fr/~mouret
+Jean-Baptiste Mouret -- jean-baptiste.mouret@inria.fr
 -------------------------------------------------------------------------------
 
 .. contents::
@@ -68,7 +68,7 @@ Examples of figures:
 
 
 
-What is Matplolib?
+What is Matplotlib?
 ------------------
 Principle
 .........
@@ -421,7 +421,7 @@ Basics
 ------
 Loading the data
 ................
-You can download the data used in this example `by following this link <http://chronos.isir.upmc.fr/~mouret/alife_matplotlib/src/data/data.tar.gz>`_.
+You can download the data used in this example `by following this link <https://github.com/jbmouret/matplotlib_for_papers/blob/master/src/data/data.tar.gz?raw=true>`_.
 
 Our data are organized as follows:
 
@@ -711,7 +711,7 @@ Quartiles are computed with numpy in the same way as the median, but using the f
     for i in range(0, len(median)):
         median[i] = np.median(data[:, i])
         perc_25[i] = np.percentile(data[:, i], 25)
-        perc_75[i] = np.percentile(data[:, i], 25)
+        perc_75[i] = np.percentile(data[:, i], 75)
     return median, perc_25, perc_75
 
   [...]
